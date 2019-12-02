@@ -1,28 +1,29 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <cadastro-time></cadastro-time>
+  <lista-times></lista-times>
+  <hr>
+  <cadastro-jogador></cadastro-jogador>
+  <lista-jogadores></lista-jogadores>
+  <hr>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import CadastroTime from './components/CadastroTime'
+import CadastroJogador from './components/CadastroJogador'
+import ListaTimes from './components/ListaTimes'
+import ListaJogadores from './components/ListarJogadores'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    CadastroTime, CadastroJogador,
+    ListaTimes, ListaJogadores
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
